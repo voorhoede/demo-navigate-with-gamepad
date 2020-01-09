@@ -2,14 +2,17 @@ const rAF = window.mozRequestAnimationFrame || window.requestAnimationFrame;
 let current = 0;
 let focusable = document.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
 
-window.addEventListener('gamepadconnected', function(e) {
-   updateLoop();
+window.addEventListener('gamepadconnected', function (e) {
+    updateLoop();
 });
 
 // event listener for vibration button
-document.querySelector('#btn-vibration').addEventListener('click', function (e) {
-    hapticFeedback();
-});
+const btnVibration = document.querySelector('#btn-vibration');
+if (btnVibration) {
+    btnVibration.addEventListener('click', function (e) {
+        hapticFeedback();
+    });
+}
 
 function hapticFeedback() {
     navigator.getGamepads()[0].vibrationActuator.playEffect('dual-rumble', {
