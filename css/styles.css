@@ -1,0 +1,99 @@
+body {
+    font-family: "Helvetica";
+    color: #222;
+}
+
+section {
+    margin: 30px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 720px;
+}
+
+.main-navigation {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
+
+.main-navigation__brand {
+    width: 200px;
+    font-size: 1.2em;
+    float: left;
+}
+
+.main-navigation__items {
+    width: 400px;
+    float: right;
+    text-align: right;
+}
+
+.main-navigation__item {
+    display:inline-block;
+    margin: 0 20px;
+    width: 50px;
+}
+
+.button-group {
+    width: 100%;
+}
+
+.button-group__item {
+    padding: 1em;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.success {
+    background-color: limegreen;
+}
+
+.link {
+    background-color: lightskyblue;
+}
+
+.warning {
+    background-color: red;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__group {
+    margin: 20px 0;
+}
+
+/* Utils */
+
+.center {
+    margin: 0 auto;
+}
+
+/* SR ONLY */
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;  /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;            /* 3 */
+}
