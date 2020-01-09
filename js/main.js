@@ -14,8 +14,8 @@ document.querySelector('#btn-vibration').addEventListener('click', function (e) 
 function hapticFeedback() {
     navigator.getGamepads()[0].vibrationActuator.playEffect('dual-rumble', {
         startDelay: 0,
-        duration: 1000,
-        weakMagnitude: 0.5,
+        duration: 1500,
+        weakMagnitude: 1,
         strongMagnitude: 1
     });
 }
